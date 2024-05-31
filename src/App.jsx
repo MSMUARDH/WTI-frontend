@@ -13,7 +13,7 @@ import LoginPage from "./Pages/LoginPage";
 import HomePage from "./Pages/HomePage";
 import RegisterPage from "./Pages/RegisterPage";
 import UpdatePage from "./Pages/UpdatePage";
-import CreateNotePage from "./Pages/CreateNotePage";
+import AddSightDetailPage from "./Pages/CreateNotePage";
 import ViewNotePage from "./Pages/ViewNotePage";
 
 function App() {
@@ -47,7 +47,7 @@ function App() {
               path="/add-sightdeatil"
               element={
                 // <ProtectedRoute>
-                <CreateNotePage />
+                <AddSightDetailPage />
                 // </ProtectedRoute>
               }
             />

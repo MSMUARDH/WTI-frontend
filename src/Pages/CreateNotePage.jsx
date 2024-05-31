@@ -1,7 +1,7 @@
 import React from "react";
 import PopupModel from "../Components/PopupModel";
 
-const CreateNotePage = () => {
+const AddSightDetailPage = () => {
   return (
     <div>
       <PopupModel />
@@ -9,4 +9,4 @@ const CreateNotePage = () => {
   );
 };
 
-export default CreateNotePage;
+export default AddSightDetailPage;

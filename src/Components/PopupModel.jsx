@@ -11,7 +11,10 @@ import {
   MDBRadio,
 } from "mdb-react-ui-kit";
 import { MDBContainer, MDBInput, MDBTextArea } from "mdb-react-ui-kit";
-import { AddSightData, getAllSightData } from "../features/Notes/detailsSlice";
+import {
+  AddSightData,
+  getAllSightData,
+} from "../features/Details/detailsSlice";
 
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -40,7 +43,7 @@ export default function PopupModel() {
     delete: false,
     createdUserId: 1, // Example user ID
     modifiedUserId: 1,
-    photoPath: "string",
+    photoPath: "/photos/airline5.jpg",
   });
 
   const validateSighting = (sighting) => {
@@ -82,7 +85,7 @@ export default function PopupModel() {
         toast.warn("Please fill in all fields");
       }
     } catch (error) {
-      toast.error("Note saved successfully...");
+      toast.error("Something went wrong...");
     }
   };
 
@@ -99,7 +102,7 @@ export default function PopupModel() {
         style={{ display: "flex", justifyContent: "center" }}
       ></div>
       {/*  */}
-      {isLoading && <h1>Loading</h1>}
+
       <MDBModal tabIndex="-1" show={centredModal} setShow={setCentredModal}>
         <MDBModalDialog centered>
           <MDBModalContent>

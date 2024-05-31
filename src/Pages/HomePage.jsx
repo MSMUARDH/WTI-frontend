@@ -19,7 +19,10 @@ import {
 import NavBar from "../Components/NavBar";
 import { useDispatch, useSelector } from "react-redux";
 
-import { getAllSightData, deleteDetail } from "../features/Notes/detailsSlice";
+import {
+  getAllSightData,
+  deleteDetail,
+} from "../features/Details/detailsSlice";
 
 import { Link } from "react-router-dom";
 
@@ -40,7 +43,7 @@ function HomePage() {
       <NavBar />
       {/* {isLoading && <h1>Loading</h1>} */}
       <MDBContainer className="App">
-        <Link to="/create-note">
+        <Link to="/add-sightdeatil">
           <MDBBtn className="my-3" toggle>
             Add Sight Detail
           </MDBBtn>
